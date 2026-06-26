@@ -89,13 +89,6 @@ export const rdfTriples: RDFTriple[] = [
   {
     subject: 'Jeremy Revaldo Latuperisa',
     predicate: 'schema:memberOf',
-    object: 'GDSC UHO',
-    subjectType: 'Person',
-    objectType: 'Organization',
-  },
-  {
-    subject: 'Jeremy Revaldo Latuperisa',
-    predicate: 'schema:memberOf',
     object: 'HIMINFO UHO',
     subjectType: 'Person',
     objectType: 'Organization',

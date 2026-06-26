@@ -54,6 +54,11 @@ export const education: Education = {
     'Sedang menempuh pendidikan Sarjana Ilmu Komputer dengan fokus pada pengembangan perangkat lukan dan sistem cerdas. Aktif terlibat dalam proyek teknologi dan organisasi kemahasiswaan.',
 };
 
+export const highSchool = {
+  institution: 'SMAN 1 Kendari',
+  location: 'Kendari, Sulawesi Tenggara',
+};
+
 // ===== Experience =====
 export const experiences: Experience[] = [
   {

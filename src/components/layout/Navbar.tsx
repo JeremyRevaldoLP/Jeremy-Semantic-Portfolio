@@ -48,9 +48,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className={`fixed top-0.5 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'glass shadow-lg' : 'bg-transparent'
-        }`}
+        className={`fixed top-0.5 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-transparent'
+          }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -65,7 +64,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 JR
               </div>
               <span className="font-semibold text-[var(--text-primary)] hidden sm:block">
-                Jeremy<span className="text-brand-500">.</span>dev
+                Jeremy<span className="text-brand-500">.</span>LP
               </span>
             </motion.button>
 
@@ -75,11 +74,10 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
-                    activeSection === item.id
+                  className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer ${activeSection === item.id
                       ? 'text-brand-500'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-                  }`}
+                    }`}
                 >
                   {item.label}
                   {activeSection === item.id && (
@@ -142,11 +140,10 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`block w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
-                      activeSection === item.id
+                    className={`block w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-colors cursor-pointer ${activeSection === item.id
                         ? 'text-brand-500 bg-brand-500/10'
                         : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]'
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </button>

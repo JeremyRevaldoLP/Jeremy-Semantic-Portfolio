@@ -22,8 +22,8 @@ export function generateJsonLd(): object {
     '@type': 'Occupation',
     name: exp.position,
     occupationLocation: {
-      '@type': 'Place',
-      name: personalInfo.location,
+      '@type': 'City',
+      name: 'Kendari',
     },
     description: exp.responsibilities.join('. '),
     skills: exp.technologies.join(', '),
@@ -251,16 +251,16 @@ export function getJsonLdSnippets(): { label: string; code: string }[] {
       ),
     },
     {
-      label: 'Event',
+      label: 'Organization',
       code: JSON.stringify(
         {
           '@context': 'https://schema.org',
-          '@type': 'Event',
-          name: 'Campus Hackathon 2024',
-          eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-          organizer: {
-            '@type': 'CollegeOrUniversity',
-            name: education.institution,
+          '@type': 'Organization',
+          name: 'Himpunan Mahasiswa Informatika (HIMINFO)',
+          member: {
+            '@type': 'Person',
+            name: 'Jeremy Revaldo Latuperisa',
+            roleName: 'Anggota Aktif & Pengembang Web',
           },
         },
         null,

@@ -19,7 +19,6 @@ const graphNodes = [
   { id: 'diskominfo', label: 'Diskominfo', x: 85, y: 80, type: 'Organisasi', color: '#f59e0b' },
   { id: 'router', label: 'Smart Router', x: 15, y: 80, type: 'Proyek', color: '#ef4444' },
   { id: 'react', label: 'React', x: 10, y: 50, type: 'Keahlian', color: '#10b981' },
-  { id: 'gdsc', label: 'GDSC UHO', x: 90, y: 50, type: 'Organisasi', color: '#f59e0b' },
 ];
 
 const graphEdges = [
@@ -28,7 +27,6 @@ const graphEdges = [
   { from: 'jeremy', to: 'diskominfo', label: 'workedAt' },
   { from: 'jeremy', to: 'router', label: 'created' },
   { from: 'jeremy', to: 'react', label: 'hasSkill' },
-  { from: 'jeremy', to: 'gdsc', label: 'memberOf' },
 ];
 
 export default function SemanticDemo() {
@@ -54,11 +52,10 @@ export default function SemanticDemo() {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key as 'concepts' | 'graph' | 'triples')}
-                className={`px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
-                  activeTab === tab.key
+                className={`px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${activeTab === tab.key
                     ? 'bg-gradient-to-r from-brand-500 to-accent-500 text-white shadow-md'
                     : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-                }`}
+                  }`}
               >
                 {tab.label}
               </button>
@@ -261,11 +258,10 @@ export default function SemanticDemo() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: index * 0.03 }}
                         onClick={() => setSelectedTriple(selectedTriple === index ? null : index)}
-                        className={`border-b border-[var(--border-color)] cursor-pointer transition-colors ${
-                          selectedTriple === index
+                        className={`border-b border-[var(--border-color)] cursor-pointer transition-colors ${selectedTriple === index
                             ? 'bg-brand-500/5'
                             : 'hover:bg-[var(--bg-secondary)]'
-                        }`}
+                          }`}
                       >
                         <td className="p-3">
                           <div className="flex items-center gap-2">

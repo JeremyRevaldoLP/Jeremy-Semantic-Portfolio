@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiMapPin, FiCalendar, FiAward, FiBook } from 'react-icons/fi';
 import SectionHeading from '../ui/SectionHeading';
-import { education } from '../../data/profile';
+import { education, highSchool } from '../../data/profile';
 
 export default function Education() {
   return (
@@ -94,6 +94,25 @@ export default function Education() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* SMA Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-3xl mx-auto mt-6"
+        >
+          <div className="card flex items-center gap-4">
+            <div className="p-3 rounded-xl bg-gradient-to-br from-brand-500/10 to-accent-500/10 text-brand-500 shrink-0">
+              <FiBook size={22} />
+            </div>
+            <div>
+              <h3 className="font-bold text-[var(--text-primary)]">{highSchool.institution}</h3>
+              <p className="text-sm text-[var(--text-secondary)]">{highSchool.location}</p>
             </div>
           </div>
         </motion.div>
