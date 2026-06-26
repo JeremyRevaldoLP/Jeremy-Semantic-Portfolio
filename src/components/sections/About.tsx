@@ -5,27 +5,27 @@ import SectionHeading from '../ui/SectionHeading';
 const aboutCards = [
   {
     icon: FiUser,
-    title: 'Who I Am',
+    title: 'Siapa Saya',
     description:
-      'A dedicated Computer Science student at Universitas Halu Oleo with a passion for technology and innovation. I thrive on solving complex problems and building solutions that make a difference.',
+      'Seorang mahasiswa Ilmu Komputer yang berdedikasi di Universitas Halu Oleo dengan hasrat tinggi terhadap teknologi dan inovasi. Saya senang memecahkan masalah kompleks dan membangun solusi yang bermanfaat bagi masyarakat.',
   },
   {
     icon: FiTarget,
-    title: 'Career Objectives',
+    title: 'Tujuan Karir',
     description:
-      'Aspiring to become a full-stack software engineer specializing in intelligent systems. I aim to combine web development expertise with machine learning to create impactful, data-driven applications.',
+      'Bercita-cita menjadi seorang insinyur perangkat lunak full-stack (full-stack software engineer) yang berspesialisasi dalam sistem cerdas. Saya bertujuan untuk menggabungkan pengembangan web dengan pembelajaran mesin guna menciptakan aplikasi cerdas berbasis data.',
   },
   {
     icon: FiHeart,
-    title: 'Areas of Interest',
+    title: 'Bidang Minat',
     description:
-      'Deeply fascinated by the intersection of Web Development, Machine Learning, Cloud Computing, and the Semantic Web. I believe in technology that is both powerful and accessible.',
+      'Sangat tertarik pada titik temu antara Pengembangan Web, Pembelajaran Mesin, Komputasi Awan, dan Web Semantik. Saya percaya pada teknologi yang bertenaga namun tetap mudah diakses.',
   },
   {
     icon: FiBookOpen,
-    title: 'Continuous Learner',
+    title: 'Pembelajar Mandiri',
     description:
-      'Always exploring new technologies, frameworks, and methodologies. Currently diving deeper into Semantic Web technologies, structured data, and knowledge graphs for better machine understanding.',
+      'Selalu bersemangat mengeksplorasi teknologi, framework, dan metodologi baru. Saat ini sedang mempelajari lebih dalam teknologi Web Semantik, data terstruktur, dan grafik pengetahuan (knowledge graphs) untuk kecerdasan mesin.',
   },
 ];
 
@@ -48,7 +48,7 @@ export default function About() {
   return (
     <section id="about" className="bg-[var(--bg-secondary)]">
       <div className="section-container">
-        <SectionHeading title="About Me" subtitle="Get to know me better" />
+        <SectionHeading title="Tentang Saya" subtitle="Kenali diri saya lebih dekat" />
 
         <motion.div
           variants={containerVariants}

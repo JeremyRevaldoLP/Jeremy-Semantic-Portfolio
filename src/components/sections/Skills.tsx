@@ -19,6 +19,12 @@ const categoryIcons: Record<string, React.ComponentType<{ size?: number }>> = {
   other: FiCpu,
 };
 
+const levelLabels = {
+  beginner: 'Pemula',
+  intermediate: 'Menengah',
+  advanced: 'Mahir',
+};
+
 const levelColors = {
   beginner: 'bg-amber-500/10 text-amber-600 border-amber-500/20',
   intermediate: 'bg-blue-500/10 text-blue-500 border-blue-500/20',
@@ -48,7 +54,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="section-container">
-        <SectionHeading title="Technical Skills" subtitle="Technologies and tools I work with" />
+        <SectionHeading title="Keahlian Teknis" subtitle="Teknologi dan alat pemrograman yang saya gunakan" />
 
         <motion.div
           variants={containerVariants}
@@ -86,7 +92,7 @@ export default function Skills() {
                         <span
                           className={`text-xs px-2 py-0.5 rounded-full border ${levelColors[skill.level]}`}
                         >
-                          {skill.level}
+                          {levelLabels[skill.level]}
                         </span>
                       </div>
                       <div className="h-1.5 bg-[var(--bg-secondary)] rounded-full overflow-hidden">

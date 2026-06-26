@@ -155,7 +155,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                   href="#/structured-data"
                   className="block w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium text-brand-500 hover:bg-brand-500/10 transition-colors"
                 >
-                  {'</>'}  Structured Data
+                  {'</>'}  Data Terstruktur
                 </a>
               </div>
             </motion.div>

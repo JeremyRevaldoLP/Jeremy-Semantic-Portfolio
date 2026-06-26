@@ -1,6 +1,6 @@
 import { FiGithub, FiLinkedin, FiMail, FiHeart } from 'react-icons/fi';
-import { SiSchemaorg } from 'react-icons/si';
-import { personalInfo } from '../../data/profile';
+import { SiSemanticweb } from 'react-icons/si';
+import { personalInfo, navItems } from '../../data/profile';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,23 +20,22 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] max-w-xs">
-              Computer Science student passionate about building meaningful software and exploring
-              the Semantic Web.
+              Mahasiswa Ilmu Komputer yang berdedikasi untuk membangun perangkat lunak bermanfaat dan menjelajahi Web Semantik.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Tautan Cepat</h3>
             <div className="grid grid-cols-2 gap-2">
-              {['About', 'Education', 'Experience', 'Skills', 'Projects', 'Semantic Web'].map(
-                link => (
+              {navItems.filter(item => item.id !== 'hero').map(
+                item => (
                   <a
-                    key={link}
-                    href={`#${link.toLowerCase().replace(' ', '-')}`}
+                    key={item.id}
+                    href={`#${item.id}`}
                     className="text-sm text-[var(--text-secondary)] hover:text-brand-500 transition-colors"
                   >
-                    {link}
+                    {item.label}
                   </a>
                 )
               )}
@@ -45,7 +44,7 @@ export default function Footer() {
 
           {/* Connect */}
           <div>
-            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Connect</h3>
+            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Kontak</h3>
             <div className="flex gap-3">
               <a
                 href={personalInfo.github}
@@ -79,13 +78,13 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-[var(--border-color)] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[var(--text-muted)]">
-            © {currentYear} {personalInfo.fullName}. All rights reserved.
+            © {currentYear} {personalInfo.fullName}. Hak Cipta Dilindungi.
           </p>
           <div className="flex items-center gap-2 text-sm text-[var(--text-muted)]">
             <span className="flex items-center gap-1">
-              Built with <FiHeart className="text-red-500" size={14} /> & Semantic Web
+              Dibuat dengan <FiHeart className="text-red-500" size={14} /> & Web Semantik
             </span>
-            <SiSchemaorg className="text-brand-500" size={16} />
+            <SiSemanticweb className="text-brand-500" size={16} />
           </div>
         </div>
       </div>

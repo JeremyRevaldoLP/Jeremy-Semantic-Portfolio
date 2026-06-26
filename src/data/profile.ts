@@ -11,104 +11,104 @@ import type {
 // ===== Personal Info =====
 export const personalInfo: PersonalInfo = {
   fullName: 'Jeremy Revaldo Latuperisa',
-  title: 'Computer Science Student',
+  title: 'Mahasiswa Ilmu Komputer',
   summary:
-    'Passionate Computer Science student at Universitas Halu Oleo with a strong interest in Web Development, Machine Learning, Cloud Computing, Software Engineering, and Semantic Web technologies. Eager to build innovative solutions that bridge the gap between human understanding and machine intelligence.',
-  email: 'jeremylatuperisa@gmail.com',
-  github: 'https://github.com/jeremylatuperisa',
-  linkedin: 'https://linkedin.com/in/jeremylatuperisa',
-  location: 'Kendari, Southeast Sulawesi, Indonesia',
+    'Mahasiswa Ilmu Komputer yang berdedikasi di Universitas Halu Oleo dengan minat yang kuat dalam Pengembangan Web (Web Development), Pembelajaran Mesin (Machine Learning), Komputasi Awan (Cloud Computing), Rekayasa Perangkat Lunak (Software Engineering), dan Teknologi Web Semantik (Semantic Web). Tertarik untuk membangun solusi inovatif yang menjembatani pemahaman manusia dan kecerdasan mesin.',
+  email: 'jeremyrevaldo0000@gmail.com',
+  github: 'https://github.com/JeremyRevaldoLP',
+  linkedin: 'https://www.linkedin.com/in/jeremy-revaldo-a86542410/',
+  location: 'Kendari, Sulawesi Tenggara, Indonesia',
   website: 'https://jeremylatuperisa.github.io',
 };
 
 // ===== Navigation Items =====
 export const navItems: NavItem[] = [
-  { id: 'hero', label: 'Home' },
-  { id: 'about', label: 'About' },
-  { id: 'education', label: 'Education' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'organizations', label: 'Organizations' },
-  { id: 'semantic', label: 'Semantic Web' },
+  { id: 'hero', label: 'Beranda' },
+  { id: 'about', label: 'Tentang Saya' },
+  { id: 'education', label: 'Pendidikan' },
+  { id: 'experience', label: 'Pengalaman' },
+  { id: 'skills', label: 'Keahlian' },
+  { id: 'projects', label: 'Proyek' },
+  { id: 'organizations', label: 'Organisasi' },
+  { id: 'semantic', label: 'Web Semantik' },
 ];
 
 // ===== Education =====
 export const education: Education = {
   institution: 'Universitas Halu Oleo',
-  degree: 'Bachelor of Computer Science',
-  field: 'Computer Science',
+  degree: 'Sarjana Ilmu Komputer (S.Kom.)',
+  field: 'Ilmu Komputer',
   startYear: 2023,
   gpa: 3.6,
   coursework: [
-    'Machine Learning',
-    'Web Development',
-    'Database Systems',
-    'Data Structures & Algorithms',
-    'Computer Networks',
-    'Software Engineering',
-    'Artificial Intelligence',
-    'Operating Systems',
+    'Pembelajaran Mesin',
+    'Pengembangan Web',
+    'Sistem Basis Data',
+    'Struktur Data & Algoritma',
+    'Jaringan Komputer',
+    'Rekayasa Perangkat Lunak',
+    'Kecerdasan Buatan',
+    'Sistem Operasi',
   ],
   description:
-    'Pursuing a Bachelor\'s degree in Computer Science with a focus on software engineering and intelligent systems. Actively involved in research projects and student organizations.',
+    'Sedang menempuh pendidikan Sarjana Ilmu Komputer dengan fokus pada pengembangan perangkat lukan dan sistem cerdas. Aktif terlibat dalam proyek teknologi dan organisasi kemahasiswaan.',
 };
 
 // ===== Experience =====
 export const experiences: Experience[] = [
   {
-    position: 'Web Development Intern',
+    position: 'Magang Pengembang Web',
     organization: 'Diskominfo Kota Kendari',
     startDate: '2024-06',
     endDate: '2024-09',
     responsibilities: [
-      'Developed and maintained government web applications for public services',
-      'Collaborated with the IT team to implement responsive and accessible user interfaces',
-      'Optimized database queries resulting in 40% faster page load times',
-      'Participated in code reviews and followed agile development practices',
-      'Created technical documentation for internal web systems',
+      'Mengembangkan dan memelihara aplikasi web pemerintah untuk layanan publik',
+      'Berkolaborasi dengan tim IT untuk menerapkan antarmuka pengguna yang responsif dan aksesibel',
+      'Mengoptimalkan kueri basis data yang menghasilkan pemuatan halaman 40% lebih cepat',
+      'Berpartisipasi dalam tinjauan kode (code reviews) dan mengikuti praktik pengembangan agile',
+      'Membuat dokumentasi teknis untuk sistem web internal',
     ],
     technologies: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'Bootstrap', 'Git'],
     type: 'internship',
   },
   {
-    position: 'IT Support Assistant',
+    position: 'Asisten IT Support',
     organization: 'Universitas Halu Oleo',
     startDate: '2024-01',
     endDate: '2024-05',
     responsibilities: [
-      'Provided technical support for campus IT infrastructure and network systems',
-      'Assisted in troubleshooting hardware and software issues for faculty and staff',
-      'Maintained and configured campus computer lab workstations',
-      'Documented IT procedures and created user guides for common issues',
+      'Menyediakan dukungan teknis untuk infrastruktur IT dan sistem jaringan kampus',
+      'Membantu memecahkan masalah perangkat keras dan perangkat lunak bagi dosen dan staf',
+      'Memelihara dan mengonfigurasi stasiun kerja laboratorium komputer kampus',
+      'Mendokumentasikan prosedur IT dan membuat panduan pengguna untuk masalah umum',
     ],
     technologies: ['Windows Server', 'Networking', 'Hardware Troubleshooting', 'Active Directory'],
     type: 'part-time',
   },
   {
-    position: 'Freelance Web Developer',
-    organization: 'Self-Employed',
+    position: 'Pengembang Web Freelance',
+    organization: 'Pekerja Mandiri',
     startDate: '2023-06',
     endDate: 'Present',
     responsibilities: [
-      'Designed and developed custom websites for local businesses and organizations',
-      'Implemented full-stack web solutions using modern frameworks and technologies',
-      'Managed client relationships, project timelines, and deliverables',
-      'Deployed and maintained websites on various hosting platforms',
+      'Merancang dan mengembangkan situs web khusus untuk bisnis lokal dan organisasi',
+      'Menerapkan solusi web full-stack menggunakan framework dan teknologi modern',
+      'Mengelola hubungan klien, linimasa proyek, dan hasil akhir (deliverables)',
+      'Mendeploy dan memelihara situs web di berbagai platform hosting',
     ],
     technologies: ['React', 'Next.js', 'Node.js', 'TailwindCSS', 'PostgreSQL', 'Vercel'],
     type: 'freelance',
   },
   {
-    position: 'Student Technology Lead',
-    organization: 'Campus Technology Projects',
+    position: 'Ketua Proyek Teknologi Mahasiswa',
+    organization: 'Proyek Teknologi Kampus',
     startDate: '2023-09',
     endDate: 'Present',
     responsibilities: [
-      'Led development teams for campus-wide technology initiatives and projects',
-      'Coordinated with student organizations to build digital tools and platforms',
-      'Organized and mentored in programming workshops and hackathons',
-      'Implemented project management best practices for student-driven tech projects',
+      'Memimpin tim pengembang untuk inisiatif dan proyek teknologi di lingkungan kampus',
+      'Berkoordinasi dengan organisasi mahasiswa untuk membangun alat dan platform digital',
+      'Mengorganisasi dan menjadi mentor dalam lokakarya pemrograman dan hackathon',
+      'Menerapkan praktik terbaik manajemen proyek untuk proyek teknologi besutan mahasiswa',
     ],
     technologies: ['Python', 'React', 'Firebase', 'Docker', 'Git', 'Figma'],
     type: 'project',
@@ -118,7 +118,7 @@ export const experiences: Experience[] = [
 // ===== Skills =====
 export const skillCategories: SkillCategory[] = [
   {
-    name: 'Programming Languages',
+    name: 'Bahasa Pemrograman',
     icon: 'code',
     skills: [
       { name: 'Python', level: 'advanced' },
@@ -131,7 +131,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    name: 'Frameworks & Libraries',
+    name: 'Framework & Pustaka',
     icon: 'framework',
     skills: [
       { name: 'React', level: 'advanced' },
@@ -144,7 +144,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    name: 'Databases',
+    name: 'Basis Data',
     icon: 'database',
     skills: [
       { name: 'MySQL', level: 'advanced' },
@@ -167,7 +167,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    name: 'Development Tools',
+    name: 'Alat Pengembangan',
     icon: 'tools',
     skills: [
       { name: 'Git', level: 'advanced' },
@@ -178,7 +178,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    name: 'Other Technical Skills',
+    name: 'Keahlian Teknis Lainnya',
     icon: 'other',
     skills: [
       { name: 'RESTful APIs', level: 'advanced' },
@@ -195,57 +195,57 @@ export const projects: Project[] = [
   {
     name: 'Smart Maintenance Router',
     description:
-      'An intelligent network router maintenance system that uses predictive analytics to anticipate and prevent network failures. Features real-time monitoring, automated diagnostics, and a user-friendly dashboard for network administrators.',
+      'Sistem pemeliharaan router jaringan cerdas yang menggunakan analitik prediktif untuk mengantisipasi dan mencegah kegagalan jaringan. Menampilkan pemantauan waktu nyata (real-time), diagnostik otomatis, dan dasbor ramah pengguna untuk administrator jaringan.',
     technologies: ['Python', 'Flask', 'React', 'TensorFlow', 'MQTT', 'PostgreSQL', 'Docker'],
-    githubUrl: 'https://github.com/jeremylatuperisa/smart-maintenance-router',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/smart-maintenance-router',
     status: 'completed',
     type: 'academic',
     highlights: [
-      'Implemented predictive maintenance algorithms using machine learning',
-      'Built real-time monitoring dashboard with WebSocket connections',
-      'Reduced network downtime by 35% in testing environment',
+      'Menerapkan algoritma pemeliharaan prediktif menggunakan machine learning',
+      'Membangun dasbor pemantauan real-time dengan koneksi WebSocket',
+      'Mengurangi waktu henti (downtime) jaringan sebesar 35% di lingkungan pengujian',
     ],
   },
   {
     name: 'Face Recognition Attendance System',
     description:
-      'An automated attendance tracking system using facial recognition technology. The system captures and processes face data to verify student identity and automatically record attendance, eliminating manual roll calls.',
+      'Sistem pelacakan kehadiran otomatis menggunakan teknologi pengenalan wajah. Sistem menangkap dan memproses data wajah untuk memverifikasi identitas mahasiswa dan merekam kehadiran secara otomatis, menghilangkan absen manual.',
     technologies: ['Python', 'OpenCV', 'TensorFlow', 'Flask', 'SQLite', 'HTML/CSS'],
-    githubUrl: 'https://github.com/jeremylatuperisa/face-recognition-attendance',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/face-recognition-attendance',
     status: 'completed',
     type: 'academic',
     highlights: [
-      'Achieved 95% accuracy in facial recognition under varying lighting conditions',
-      'Processed real-time video feed for instant attendance marking',
-      'Implemented anti-spoofing measures for system integrity',
+      'Mencapai akurasi 95% dalam pengenalan wajah di bawah kondisi pencahayaan yang bervariasi',
+      'Memproses umpan video real-time untuk penandaan kehadiran instan',
+      'Menerapkan langkah-langkah anti-pemalsuan (anti-spoofing) untuk integritas sistem',
     ],
   },
   {
-    name: 'Semantic Web Portfolio',
+    name: 'Portofolio Web Semantik',
     description:
-      'This very website — a personal profile built with Semantic Web technologies. Demonstrates JSON-LD structured data, Schema.org markup, and RDF triples to make personal information machine-readable and searchable.',
+      'Website portofolio ini — profil pribadi yang dibangun dengan teknologi Web Semantik. Menunjukkan data terstruktur JSON-LD, markup Schema.org, dan RDF triples untuk membuat informasi profil dapat dibaca oleh mesin dan mesin pencari secara optimal.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'JSON-LD', 'Schema.org'],
-    githubUrl: 'https://github.com/jeremylatuperisa/semantic-portfolio',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/semantic-portfolio',
     status: 'completed',
     type: 'academic',
     highlights: [
-      'Implemented comprehensive Schema.org structured data with JSON-LD',
-      'Built interactive Semantic Web visualization and demonstration',
-      'Achieved high Lighthouse scores for performance, accessibility, and SEO',
+      'Menerapkan data terstruktur Schema.org yang komprehensif dengan JSON-LD',
+      'Membangun visualisasi interaktif dan demonstrasi Web Semantik',
+      'Mencapai skor Lighthouse tinggi untuk performa, aksesibilitas, dan SEO',
     ],
   },
   {
-    name: 'Local Business Directory',
+    name: 'Direktori Bisnis Lokal',
     description:
-      'A full-stack web application for discovering and reviewing local businesses in Kendari. Features search, filtering, user reviews, and business owner dashboards with analytics.',
+      'Aplikasi web full-stack untuk menemukan dan mengulas bisnis lokal di Kendari. Menampilkan fitur pencarian, filter, ulasan pengguna, dan dasbor pemilik bisnis dengan analitik.',
     technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'TailwindCSS', 'Vercel'],
-    githubUrl: 'https://github.com/jeremylatuperisa/local-business-directory',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/local-business-directory',
     status: 'in-progress',
     type: 'personal',
     highlights: [
-      'Designed responsive UI with modern card-based layout',
-      'Implemented full-text search with PostgreSQL',
-      'Built REST API with authentication and authorization',
+      'Merancang UI responsif dengan tata letak berbasis kartu yang modern',
+      'Menerapkan pencarian teks lengkap (full-text search) dengan PostgreSQL',
+      'Membangun REST API dengan autentikasi dan otorisasi pengguna',
     ],
   },
 ];
@@ -254,34 +254,34 @@ export const projects: Project[] = [
 export const organizations: Organization[] = [
   {
     name: 'Himpunan Mahasiswa Informatika (HIMINFO)',
-    role: 'Active Member & Web Developer',
-    period: '2023 – Present',
+    role: 'Anggota Aktif & Pengembang Web',
+    period: '2023 – Sekarang',
     description:
-      'Contributing to the student association for the Computer Science department. Responsible for developing and maintaining the organization\'s website and digital platforms.',
+      'Berkontribusi pada asosiasi mahasiswa program studi Teknik Informatika. Bertanggung jawab atas pengembangan dan pemeliharaan situs web organisasi serta platform digital lainnya.',
     type: 'student-org',
   },
   {
     name: 'Google Developer Student Club (GDSC)',
-    role: 'Core Team Member',
-    period: '2023 – Present',
+    role: 'Anggota Tim Inti (Core Team)',
+    period: '2023 – Sekarang',
     description:
-      'Active participant in Google-sponsored tech community on campus. Organizing workshops on web development, cloud computing, and machine learning for fellow students.',
+      'Berpartisipasi aktif dalam komunitas teknologi mahasiswa yang didukung oleh Google di kampus. Mengadakan workshop pengembangan web, komputasi awan, dan machine learning bagi sesama mahasiswa.',
     type: 'community',
   },
   {
     name: 'Campus Hackathon 2024',
-    role: 'Team Lead & Full-Stack Developer',
+    role: 'Ketua Tim & Pengembang Full-Stack',
     period: '2024',
     description:
-      'Led a team of 4 to develop an innovative solution during a 48-hour hackathon. Built a prototype for a campus resource management app that won recognition from judges.',
+      'Memimpin tim beranggotakan 4 orang untuk mengembangkan solusi inovatif selama hackathon 48 jam. Membangun prototipe aplikasi manajemen sumber daya kampus yang mendapat penghargaan dari juri.',
     type: 'event',
   },
   {
-    name: 'Student IT Volunteer Team',
-    role: 'Technical Volunteer',
-    period: '2023 – Present',
+    name: 'Tim Relawan IT Mahasiswa',
+    role: 'Relawan Teknis',
+    period: '2023 – Sekarang',
     description:
-      'Volunteering to provide IT support and technical training to fellow students. Conducting workshops on basic programming, web development, and productivity tools.',
+      'Menjadi relawan untuk menyediakan dukungan IT dan pelatihan teknis bagi sesama mahasiswa. Mengadakan pelatihan pemrograman dasar, desain web, dan alat produktivitas.',
     type: 'team',
   },
 ];

@@ -4,15 +4,21 @@ import SectionHeading from '../ui/SectionHeading';
 import { projects } from '../../data/profile';
 
 const statusConfig = {
-  completed: { icon: FiCheckCircle, label: 'Completed', color: 'text-emerald-500 bg-emerald-500/10' },
-  'in-progress': { icon: FiClock, label: 'In Progress', color: 'text-amber-500 bg-amber-500/10' },
-  planned: { icon: FiCalendar, label: 'Planned', color: 'text-blue-500 bg-blue-500/10' },
+  completed: { icon: FiCheckCircle, label: 'Selesai', color: 'text-emerald-500 bg-emerald-500/10' },
+  'in-progress': { icon: FiClock, label: 'Sedang Berjalan', color: 'text-amber-500 bg-amber-500/10' },
+  planned: { icon: FiCalendar, label: 'Direncanakan', color: 'text-blue-500 bg-blue-500/10' },
 };
 
 const typeGradients = {
   academic: 'from-blue-500/20 to-purple-500/20',
   personal: 'from-emerald-500/20 to-teal-500/20',
   freelance: 'from-amber-500/20 to-orange-500/20',
+};
+
+const typeLabels = {
+  academic: 'Proyek Akademik',
+  personal: 'Proyek Pribadi',
+  freelance: 'Proyek Freelance',
 };
 
 const containerVariants = {
@@ -32,7 +38,7 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-[var(--bg-secondary)]">
       <div className="section-container">
-        <SectionHeading title="Projects" subtitle="Things I've built and contributed to" />
+        <SectionHeading title="Proyek" subtitle="Sistem dan aplikasi yang telah saya bangun dan kontribusikan" />
 
         <motion.div
           variants={containerVariants}
@@ -67,7 +73,7 @@ export default function Projects() {
                       </div>
                     </div>
                     <span className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">
-                      {project.type} Project
+                      {typeLabels[project.type]}
                     </span>
                   </div>
                 </div>
@@ -109,7 +115,7 @@ export default function Projects() {
                       className="flex items-center gap-1.5 text-sm text-[var(--text-secondary)] hover:text-brand-500 transition-colors"
                     >
                       <FiGithub size={14} />
-                      Source Code
+                      Kode Sumber
                     </a>
                     <a
                       href={project.githubUrl}

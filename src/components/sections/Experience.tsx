@@ -18,16 +18,16 @@ const typeColors = {
 };
 
 const typeLabels = {
-  internship: 'Internship',
-  'part-time': 'Part-time',
+  internship: 'Magang',
+  'part-time': 'Paruh Waktu',
   freelance: 'Freelance',
-  project: 'Project',
+  project: 'Proyek Kampus',
 };
 
 function formatDate(dateStr: string): string {
-  if (dateStr === 'Present') return 'Present';
+  if (dateStr === 'Present') return 'Sekarang';
   const [year, month] = dateStr.split('-');
-  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agt', 'Sep', 'Okt', 'Nov', 'Des'];
   return `${monthNames[parseInt(month) - 1]} ${year}`;
 }
 
@@ -35,7 +35,7 @@ export default function Experience() {
   return (
     <section id="experience" className="bg-[var(--bg-secondary)]">
       <div className="section-container">
-        <SectionHeading title="Experience" subtitle="My professional journey" />
+        <SectionHeading title="Pengalaman" subtitle="Riwayat karir dan pengalaman profesional saya" />
 
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}

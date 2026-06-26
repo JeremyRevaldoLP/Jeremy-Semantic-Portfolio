@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <section id="education">
       <div className="section-container">
-        <SectionHeading title="Education" subtitle="My academic journey" />
+        <SectionHeading title="Pendidikan" subtitle="Riwayat pendidikan akademik saya" />
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -37,12 +37,12 @@ export default function Education() {
                 <div className="flex items-center gap-2 text-[var(--text-secondary)]">
                   <FiCalendar size={16} className="text-brand-500" />
                   <span className="text-sm">
-                    {education.startYear} – {education.endYear ?? 'Present'}
+                    {education.startYear} – {education.endYear ?? 'Sekarang'}
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[var(--text-secondary)]">
                   <FiAward size={16} className="text-brand-500" />
-                  <span className="text-sm">GPA: {education.gpa} / 4.0</span>
+                  <span className="text-sm">IPK: {education.gpa} / 4.0</span>
                 </div>
                 <div className="flex items-center gap-2 text-[var(--text-secondary)]">
                   <FiMapPin size={16} className="text-brand-500" />
@@ -59,7 +59,7 @@ export default function Education() {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm font-medium text-[var(--text-primary)]">
-                    Grade Point Average
+                    Indeks Prestasi Kumulatif (IPK)
                   </span>
                   <span className="text-sm font-bold text-brand-500">{education.gpa} / 4.0</span>
                 </div>
@@ -77,7 +77,7 @@ export default function Education() {
               {/* Coursework */}
               <div>
                 <h4 className="text-sm font-semibold text-[var(--text-primary)] mb-3">
-                  Relevant Coursework
+                  Mata Kuliah Relevan
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {education.coursework.map((course, i) => (

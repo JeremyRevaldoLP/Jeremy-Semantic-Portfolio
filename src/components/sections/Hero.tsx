@@ -3,11 +3,11 @@ import { FiGithub, FiMail, FiChevronDown } from 'react-icons/fi';
 import { personalInfo } from '../../data/profile';
 
 const interests = [
-  'Web Development',
-  'Machine Learning',
-  'Cloud Computing',
-  'Software Engineering',
-  'Semantic Web',
+  'Pengembangan Web',
+  'Pembelajaran Mesin',
+  'Komputasi Awan',
+  'Rekayasa Perangkat Lunak',
+  'Web Semantik',
 ];
 
 export default function Hero() {
@@ -75,7 +75,7 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
           </span>
           <span className="text-sm font-medium text-[var(--text-secondary)] bg-[var(--bg-secondary)] px-3 py-1 rounded-full border border-[var(--border-color)]">
-            Open to opportunities
+            Terbuka untuk peluang kerja
           </span>
         </motion.div>
 
@@ -86,7 +86,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight"
         >
-          Hi, I'm{' '}
+          Halo, Saya{' '}
           <span className="gradient-text">{personalInfo.fullName.split(' ').slice(0, 2).join(' ')}</span>
           <br />
           <span className="text-[var(--text-primary)]">{personalInfo.fullName.split(' ').slice(2).join(' ')}</span>
@@ -150,7 +150,7 @@ export default function Hero() {
           </a>
           <a href={`mailto:${personalInfo.email}`} className="btn-outline">
             <FiMail size={18} />
-            Contact
+            Hubungi Saya
           </a>
         </motion.div>
       </div>

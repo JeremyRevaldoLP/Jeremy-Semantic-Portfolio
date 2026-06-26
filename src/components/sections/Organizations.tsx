@@ -4,10 +4,10 @@ import SectionHeading from '../ui/SectionHeading';
 import { organizations } from '../../data/profile';
 
 const typeConfig = {
-  'student-org': { icon: FiUsers, gradient: 'from-blue-500 to-indigo-500', label: 'Student Organization' },
-  community: { icon: FiGlobe, gradient: 'from-emerald-500 to-teal-500', label: 'Community' },
-  event: { icon: FiCalendar, gradient: 'from-amber-500 to-orange-500', label: 'Event' },
-  team: { icon: FiStar, gradient: 'from-purple-500 to-pink-500', label: 'Team' },
+  'student-org': { icon: FiUsers, gradient: 'from-blue-500 to-indigo-500', label: 'Organisasi Mahasiswa' },
+  community: { icon: FiGlobe, gradient: 'from-emerald-500 to-teal-500', label: 'Komunitas' },
+  event: { icon: FiCalendar, gradient: 'from-amber-500 to-orange-500', label: 'Kegiatan' },
+  team: { icon: FiStar, gradient: 'from-purple-500 to-pink-500', label: 'Tim' },
 };
 
 const containerVariants = {
@@ -28,8 +28,8 @@ export default function Organizations() {
     <section id="organizations">
       <div className="section-container">
         <SectionHeading
-          title="Organizations & Activities"
-          subtitle="Communities and events I'm involved in"
+          title="Organisasi & Kegiatan"
+          subtitle="Komunitas dan kegiatan yang saya ikuti"
         />
 
         <motion.div

@@ -19,7 +19,7 @@ export const rdfTriples: RDFTriple[] = [
   {
     subject: 'Jeremy Revaldo Latuperisa',
     predicate: 'schema:hasCredential',
-    object: 'Bachelor of Computer Science',
+    object: 'Sarjana Ilmu Komputer (S.Kom.)',
     subjectType: 'Person',
     objectType: 'EducationalOccupationalCredential',
   },
@@ -47,7 +47,7 @@ export const rdfTriples: RDFTriple[] = [
   {
     subject: 'Jeremy Revaldo Latuperisa',
     predicate: 'schema:hasSkill',
-    object: 'Machine Learning',
+    object: 'Pembelajaran Mesin',
     subjectType: 'Person',
     objectType: 'DefinedTerm',
   },
@@ -61,14 +61,14 @@ export const rdfTriples: RDFTriple[] = [
   {
     subject: 'Jeremy Revaldo Latuperisa',
     predicate: 'schema:hasOccupation',
-    object: 'Web Development Intern',
+    object: 'Magang Pengembang Web',
     subjectType: 'Person',
     objectType: 'Occupation',
   },
   {
     subject: 'Jeremy Revaldo Latuperisa',
     predicate: 'schema:hasOccupation',
-    object: 'Freelance Web Developer',
+    object: 'Pengembang Web Freelance',
     subjectType: 'Person',
     objectType: 'Occupation',
   },
@@ -127,77 +127,77 @@ export const rdfTriples: RDFTriple[] = [
 export const schemaEntities: SchemaEntity[] = [
   {
     type: 'Person',
-    description: 'Represents Jeremy Revaldo Latuperisa as a person with professional attributes.',
+    description: 'Merepresentasikan profil Jeremy Revaldo Latuperisa sebagai individu dengan atribut profesional.',
     properties: {
       name: 'Jeremy Revaldo Latuperisa',
-      jobTitle: 'Computer Science Student',
-      email: 'jeremylatuperisa@gmail.com',
+      jobTitle: 'Mahasiswa Ilmu Komputer',
+      email: 'jeremyrevaldo0000@gmail.com',
       url: 'https://jeremylatuperisa.github.io',
-      sameAs: 'GitHub, LinkedIn profiles',
-      knowsAbout: 'Web Development, Machine Learning, Cloud Computing',
-      hasCredential: 'Bachelor of Computer Science',
-      hasOccupation: 'Web Development Intern, Freelance Web Developer',
+      sameAs: 'GitHub, LinkedIn',
+      knowsAbout: 'Pengembangan Web, Pembelajaran Mesin, Komputasi Awan',
+      hasCredential: 'Sarjana Ilmu Komputer (S.Kom.)',
+      hasOccupation: 'Magang Pengembang Web, Pengembang Web Freelance',
     },
   },
   {
     type: 'CollegeOrUniversity',
-    description: 'Represents the educational institution where Jeremy studies.',
+    description: 'Merepresentasikan institusi pendidikan tinggi tempat Jeremy menempuh studinya.',
     properties: {
       name: 'Universitas Halu Oleo',
-      address: 'Kendari, Southeast Sulawesi, Indonesia',
+      address: 'Kendari, Sulawesi Tenggara, Indonesia',
       url: 'https://uho.ac.id',
     },
   },
   {
     type: 'Organization',
-    description: 'Represents organizations Jeremy has been affiliated with.',
+    description: 'Merepresentasikan organisasi yang pernah atau sedang diikuti oleh Jeremy.',
     properties: {
       name: 'Diskominfo Kota Kendari',
       type: 'GovernmentOrganization',
-      description: 'Government IT agency in Kendari',
+      description: 'Dinas Komunikasi dan Informatika Kota Kendari',
     },
   },
   {
     type: 'Occupation',
-    description: 'Represents Jeremy\'s work experience roles.',
+    description: 'Merepresentasikan pengalaman kerja atau profesi Jeremy.',
     properties: {
-      name: 'Web Development Intern',
+      name: 'Magang Pengembang Web',
       occupationLocation: 'Kendari, Indonesia',
       skills: 'PHP, Laravel, MySQL, JavaScript',
     },
   },
   {
     type: 'SoftwareSourceCode',
-    description: 'Represents software projects created by Jeremy.',
+    description: 'Merepresentasikan proyek perangkat lunak yang dikembangkan oleh Jeremy.',
     properties: {
       name: 'Smart Maintenance Router',
       programmingLanguage: 'Python',
-      codeRepository: 'GitHub URL',
+      codeRepository: 'URL Repositori GitHub',
       author: 'Jeremy Revaldo Latuperisa',
     },
   },
   {
     type: 'DefinedTerm',
-    description: 'Represents individual technical skills.',
+    description: 'Merepresentasikan istilah keahlian teknis secara spesifik.',
     properties: {
-      name: 'Python, JavaScript, React, etc.',
-      termCode: 'Skill identifier',
-      inDefinedTermSet: 'Technical Skills',
+      name: 'Python, JavaScript, React, dll.',
+      termCode: 'Kode identifikasi keahlian',
+      inDefinedTermSet: 'Keahlian Teknis',
     },
   },
   {
     type: 'EducationalOccupationalCredential',
-    description: 'Represents academic credentials and qualifications.',
+    description: 'Merepresentasikan kualifikasi atau gelar akademik yang dimiliki.',
     properties: {
-      credentialCategory: 'Bachelor\'s Degree',
-      educationalLevel: 'Undergraduate',
-      competencyRequired: 'Computer Science',
+      credentialCategory: 'Gelar Sarjana',
+      educationalLevel: 'Sarjana (S1)',
+      competencyRequired: 'Ilmu Komputer',
       recognizedBy: 'Universitas Halu Oleo',
     },
   },
   {
     type: 'Event',
-    description: 'Represents technical events and activities.',
+    description: 'Merepresentasikan kegiatan atau kompetisi teknologi yang diikuti oleh Jeremy.',
     properties: {
       name: 'Campus Hackathon 2024',
       eventAttendanceMode: 'OfflineEventAttendanceMode',
@@ -209,27 +209,27 @@ export const schemaEntities: SchemaEntity[] = [
 // ===== Semantic Web Concepts =====
 export const semanticConcepts = [
   {
-    title: 'What is the Semantic Web?',
+    title: 'Apa itu Web Semantik?',
     description:
-      'The Semantic Web is an extension of the World Wide Web that enables machines to understand and interpret the meaning of information on web pages. It uses standardized formats and protocols to create a web of data that can be processed by machines.',
+      'Web Semantik adalah ekstensi dari World Wide Web yang memungkinkan mesin untuk memahami dan menafsirkan arti (semantik) dari informasi di halaman web. Ini menggunakan format standar untuk menciptakan jaringan data yang dapat diproses langsung oleh mesin.',
     icon: 'globe',
   },
   {
-    title: 'Why Structured Data?',
+    title: 'Mengapa Data Terstruktur?',
     description:
-      'Structured data helps search engines understand the content of web pages. By adding semantic markup, we provide explicit clues about the meaning of content, enabling rich search results, knowledge panels, and better discoverability.',
+      'Data terstruktur membantu mesin pencari memahami konten halaman web secara tepat. Dengan menambahkan markup semantik, kita memberikan petunjuk eksplisit tentang arti konten, memungkinkan hasil pencarian kaya (rich results), panel pengetahuan (knowledge panels), dan keterbacaan yang jauh lebih baik.',
     icon: 'data',
   },
   {
-    title: 'How Schema.org Works',
+    title: 'Cara Kerja Schema.org',
     description:
-      'Schema.org provides a shared vocabulary for structured data markup. It defines types (like Person, Organization) and properties (like name, jobTitle) that search engines understand. Data is typically embedded using JSON-LD format in HTML pages.',
+      'Schema.org menyediakan kosakata (vocabulary) bersama untuk markup data terstruktur. Schema.org mendefinisikan tipe (seperti Person, Organization) dan properti (seperti name, jobTitle) yang dipahami oleh berbagai mesin pencari utama. Data ini disematkan menggunakan format JSON-LD.',
     icon: 'schema',
   },
   {
-    title: 'Search Engine Understanding',
+    title: 'Pemahaman Mesin Pencari',
     description:
-      'When search engines crawl a page with structured data, they can create rich snippets, knowledge cards, and enhanced search results. This improves visibility, click-through rates, and overall SEO performance.',
+      'Ketika mesin pencari merayapi halaman dengan data terstruktur, mereka dapat membuat cuplikan kaya (rich snippets), kartu informasi, dan hasil pencarian interaktif. Ini meningkatkan visibilitas, rasio klik-tayang (CTR), dan kinerja SEO secara keseluruhan.',
     icon: 'search',
   },
 ];

@@ -13,13 +13,13 @@ const conceptIcons: Record<string, React.ComponentType<{ size?: number; classNam
 
 // Visual graph nodes for the semantic relationship visualization
 const graphNodes = [
-  { id: 'jeremy', label: 'Jeremy R. Latuperisa', x: 50, y: 50, type: 'Person', color: '#6366f1' },
-  { id: 'uho', label: 'Universitas Halu Oleo', x: 85, y: 20, type: 'University', color: '#06b6d4' },
-  { id: 'python', label: 'Python', x: 15, y: 20, type: 'Skill', color: '#10b981' },
-  { id: 'diskominfo', label: 'Diskominfo', x: 85, y: 80, type: 'Organization', color: '#f59e0b' },
-  { id: 'router', label: 'Smart Router', x: 15, y: 80, type: 'Project', color: '#ef4444' },
-  { id: 'react', label: 'React', x: 10, y: 50, type: 'Skill', color: '#10b981' },
-  { id: 'gdsc', label: 'GDSC UHO', x: 90, y: 50, type: 'Organization', color: '#f59e0b' },
+  { id: 'jeremy', label: 'Jeremy R. Latuperisa', x: 50, y: 50, type: 'Orang', color: '#6366f1' },
+  { id: 'uho', label: 'Universitas Halu Oleo', x: 85, y: 20, type: 'Universitas', color: '#06b6d4' },
+  { id: 'python', label: 'Python', x: 15, y: 20, type: 'Keahlian', color: '#10b981' },
+  { id: 'diskominfo', label: 'Diskominfo', x: 85, y: 80, type: 'Organisasi', color: '#f59e0b' },
+  { id: 'router', label: 'Smart Router', x: 15, y: 80, type: 'Proyek', color: '#ef4444' },
+  { id: 'react', label: 'React', x: 10, y: 50, type: 'Keahlian', color: '#10b981' },
+  { id: 'gdsc', label: 'GDSC UHO', x: 90, y: 50, type: 'Organisasi', color: '#f59e0b' },
 ];
 
 const graphEdges = [
@@ -39,16 +39,16 @@ export default function SemanticDemo() {
     <section id="semantic" className="bg-[var(--bg-secondary)]">
       <div className="section-container">
         <SectionHeading
-          title="Semantic Web"
-          subtitle="Understanding how machines interpret this website's data"
+          title="Web Semantik"
+          subtitle="Memahami bagaimana mesin menafsirkan data situs web ini"
         />
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex rounded-xl bg-[var(--bg-card)] border border-[var(--border-color)] p-1">
             {[
-              { key: 'concepts', label: 'Concepts' },
-              { key: 'graph', label: 'Knowledge Graph' },
+              { key: 'concepts', label: 'Konsep Dasar' },
+              { key: 'graph', label: 'Grafik Pengetahuan' },
               { key: 'triples', label: 'RDF Triples' },
             ].map(tab => (
               <button
@@ -113,9 +113,9 @@ export default function SemanticDemo() {
           >
             <div className="card !p-0 overflow-hidden">
               <div className="p-4 border-b border-[var(--border-color)]">
-                <h3 className="font-semibold text-[var(--text-primary)]">Semantic Relationship Graph</h3>
+                <h3 className="font-semibold text-[var(--text-primary)]">Grafik Hubungan Semantik</h3>
                 <p className="text-sm text-[var(--text-secondary)]">
-                  Visual representation of the relationships between entities on this website
+                  Representasi visual dari hubungan antara entitas-entitas data pada situs web ini
                 </p>
               </div>
               <div className="p-4 sm:p-8">
@@ -207,11 +207,11 @@ export default function SemanticDemo() {
                 {/* Legend */}
                 <div className="flex flex-wrap justify-center gap-4 mt-6">
                   {[
-                    { color: '#6366f1', label: 'Person' },
-                    { color: '#06b6d4', label: 'University' },
-                    { color: '#10b981', label: 'Skill' },
-                    { color: '#f59e0b', label: 'Organization' },
-                    { color: '#ef4444', label: 'Project' },
+                    { color: '#6366f1', label: 'Orang (Person)' },
+                    { color: '#06b6d4', label: 'Universitas' },
+                    { color: '#10b981', label: 'Keahlian' },
+                    { color: '#f59e0b', label: 'Organisasi' },
+                    { color: '#ef4444', label: 'Proyek' },
                   ].map(item => (
                     <div key={item.label} className="flex items-center gap-1.5">
                       <div
@@ -237,19 +237,19 @@ export default function SemanticDemo() {
             <div className="card !p-0 overflow-hidden">
               <div className="p-4 border-b border-[var(--border-color)]">
                 <h3 className="font-semibold text-[var(--text-primary)]">
-                  RDF Triples (Subject → Predicate → Object)
+                  RDF Triples (Subjek → Predikat → Objek)
                 </h3>
                 <p className="text-sm text-[var(--text-secondary)]">
-                  The fundamental building blocks of Semantic Web data representation
+                  Unit dasar representasi data dalam teknologi Web Semantik
                 </p>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[var(--border-color)] bg-[var(--bg-secondary)]">
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Subject</th>
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Predicate</th>
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Object</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Subjek</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Predikat</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Objek</th>
                     </tr>
                   </thead>
                   <tbody>

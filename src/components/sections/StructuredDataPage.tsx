@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowLeft, FiCopy, FiCheck, FiArrowRight } from 'react-icons/fi';
-import { SiSchemaorg } from 'react-icons/si';
+import { SiSemanticweb } from 'react-icons/si';
 import { getJsonLdSnippets } from '../../lib/jsonld';
 import { rdfTriples } from '../../data/semantic';
 import { schemaEntities } from '../../data/semantic';
@@ -32,7 +32,7 @@ export default function StructuredDataPage() {
             className="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-brand-500 transition-colors mb-6 cursor-pointer"
           >
             <FiArrowLeft size={16} />
-            Back to Profile
+            Kembali ke Profil
           </button>
 
           <motion.div
@@ -41,13 +41,13 @@ export default function StructuredDataPage() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-3 mb-3">
-              <SiSchemaorg className="text-brand-500" size={32} />
-              <h1 className="text-3xl sm:text-4xl font-bold gradient-text">Structured Data</h1>
+              <SiSemanticweb className="text-brand-500" size={32} />
+              <h1 className="text-3xl sm:text-4xl font-bold gradient-text">Data Terstruktur</h1>
             </div>
             <p className="text-[var(--text-secondary)] max-w-2xl">
-              Complete JSON-LD structured data implementation using Schema.org vocabulary.
-              This page demonstrates how all profile information is encoded as machine-readable
-              semantic data.
+              Implementasi lengkap data terstruktur JSON-LD menggunakan kosakata Schema.org. 
+              Halaman ini menunjukkan bagaimana semua informasi profil dikodekan sebagai data semantik 
+              yang dapat dibaca dan ditafsirkan dengan optimal oleh mesin pencari.
             </p>
           </motion.div>
         </div>
@@ -61,7 +61,7 @@ export default function StructuredDataPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="card sticky top-24"
             >
-              <h2 className="font-semibold text-[var(--text-primary)] mb-4">JSON-LD Snippets</h2>
+              <h2 className="font-semibold text-[var(--text-primary)] mb-4">Snippet JSON-LD</h2>
               <div className="space-y-1">
                 {snippets.map((snippet, index) => (
                   <button
@@ -106,7 +106,7 @@ export default function StructuredDataPage() {
                   className="flex items-center gap-1 px-2 py-1 rounded text-xs text-[var(--text-secondary)] hover:text-brand-500 hover:bg-brand-500/10 transition-colors cursor-pointer"
                 >
                   {copied ? <FiCheck size={14} /> : <FiCopy size={14} />}
-                  {copied ? 'Copied!' : 'Copy'}
+                  {copied ? 'Tersalin!' : 'Salin'}
                 </button>
               </div>
               <div className="code-block !rounded-none !border-0 max-h-96 overflow-y-auto">
@@ -124,18 +124,18 @@ export default function StructuredDataPage() {
               className="card !p-0 overflow-hidden"
             >
               <div className="p-4 border-b border-[var(--border-color)]">
-                <h2 className="font-semibold text-[var(--text-primary)]">Schema.org Entities Used</h2>
+                <h2 className="font-semibold text-[var(--text-primary)]">Entitas Schema.org yang Digunakan</h2>
                 <p className="text-sm text-[var(--text-secondary)]">
-                  Complete list of Schema.org types implemented on this website
+                  Daftar lengkap tipe Schema.org yang diimplementasikan pada situs web ini
                 </p>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[var(--border-color)] bg-[var(--bg-secondary)]">
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Type</th>
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Description</th>
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Key Properties</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Tipe</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Deskripsi</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Properti Utama</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -175,19 +175,19 @@ export default function StructuredDataPage() {
             >
               <div className="p-4 border-b border-[var(--border-color)]">
                 <h2 className="font-semibold text-[var(--text-primary)]">
-                  Subject – Predicate – Object Triples
+                  Triple Subjek – Predikat – Objek
                 </h2>
                 <p className="text-sm text-[var(--text-secondary)]">
-                  All semantic relationships expressed as RDF triples
+                  Semua hubungan semantik yang dinyatakan dalam RDF triples
                 </p>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[var(--border-color)] bg-[var(--bg-secondary)]">
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Subject</th>
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Predicate</th>
-                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Object</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Subjek</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Predikat</th>
+                      <th className="text-left p-3 font-semibold text-[var(--text-primary)]">Objek</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -229,31 +229,31 @@ export default function StructuredDataPage() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="card"
             >
-              <h2 className="font-semibold text-[var(--text-primary)] mb-4">Validation & Testing</h2>
+              <h2 className="font-semibold text-[var(--text-primary)] mb-4">Validasi & Pengujian</h2>
               <p className="text-sm text-[var(--text-secondary)] mb-4">
-                You can validate the structured data on this website using these tools:
+                Anda dapat memvalidasi data terstruktur pada situs web ini menggunakan alat-alat resmi berikut:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
                   {
-                    name: 'Google Rich Results Test',
+                    name: 'Uji Hasil Kaya Google (Rich Results)',
                     url: 'https://search.google.com/test/rich-results',
-                    description: 'Test how Google sees your structured data',
+                    description: 'Menguji bagaimana Google merayapi dan membaca data terstruktur Anda',
                   },
                   {
-                    name: 'Schema.org Validator',
+                    name: 'Validator Schema.org',
                     url: 'https://validator.schema.org/',
-                    description: 'Validate against Schema.org vocabulary',
+                    description: 'Memvalidasi kesesuaian data terhadap kosakata formal Schema.org',
                   },
                   {
                     name: 'JSON-LD Playground',
                     url: 'https://json-ld.org/playground/',
-                    description: 'Visualize and debug JSON-LD data',
+                    description: 'Memvisualisasikan, merapikan, dan men-debug data berformat JSON-LD',
                   },
                   {
-                    name: 'Structured Data Linter',
+                    name: 'Linter Data Terstruktur',
                     url: 'http://linter.structured-data.org/',
-                    description: 'Lint and validate structured data formats',
+                    description: 'Memeriksa validitas format data terstruktur dari alamat web',
                   },
                 ].map(tool => (
                   <a
@@ -285,8 +285,8 @@ function highlightJson(json: string): React.ReactNode {
   const lines = json.split('\n');
   return lines.map((line, i) => {
     const highlighted = line
-      .replace(/"([^"]+)":/g, '<key>"$1"</key>:')
-      .replace(/: "([^"]+)"/g, ': <str>"$1"</str>')
+      .replace(/"([^"]+)":/g, '<key>' + '"$1"' + '</key>:')
+      .replace(/: "([^"]+)"/g, ': <str>' + '"$1"' + '</str>')
       .replace(/: (true|false|null)/g, ': <bool>$1</bool>')
       .replace(/: (\d+)/g, ': <num>$1</num>');
 

@@ -70,7 +70,7 @@ export function generateJsonLd(): object {
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Kendari',
-          addressRegion: 'Southeast Sulawesi',
+          addressRegion: 'Sulawesi Tenggara',
           addressCountry: 'ID',
         },
         alumniOf: {
@@ -79,16 +79,16 @@ export function generateJsonLd(): object {
           url: 'https://uho.ac.id',
         },
         knowsAbout: [
-          'Web Development',
-          'Machine Learning',
-          'Cloud Computing',
-          'Software Engineering',
-          'Semantic Web',
+          'Pengembangan Web',
+          'Pembelajaran Mesin',
+          'Komputasi Awan',
+          'Rekayasa Perangkat Lunak',
+          'Web Semantik',
         ],
         hasCredential: {
           '@type': 'EducationalOccupationalCredential',
           credentialCategory: education.degree,
-          educationalLevel: 'Undergraduate',
+          educationalLevel: 'Sarjana (S1)',
           competencyRequired: education.field,
           recognizedBy: {
             '@type': 'CollegeOrUniversity',
@@ -96,7 +96,7 @@ export function generateJsonLd(): object {
           },
         },
         hasOccupation: occupations,
-        knowsLanguage: ['Indonesian', 'English'],
+        knowsLanguage: ['Indonesia', 'Inggris'],
       },
       // College entity
       {
@@ -106,7 +106,7 @@ export function generateJsonLd(): object {
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Kendari',
-          addressRegion: 'Southeast Sulawesi',
+          addressRegion: 'Sulawesi Tenggara',
           addressCountry: 'ID',
         },
       },
@@ -114,7 +114,7 @@ export function generateJsonLd(): object {
       {
         '@type': 'GovernmentOrganization',
         name: 'Diskominfo Kota Kendari',
-        description: 'Government agency for communications and informatics in Kendari',
+        description: 'Dinas Komunikasi dan Informatika Kota Kendari',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Kendari',
@@ -130,7 +130,7 @@ export function generateJsonLd(): object {
       // Website
       {
         '@type': 'WebSite',
-        name: `${personalInfo.fullName} — Portfolio`,
+        name: `${personalInfo.fullName} — Portofolio`,
         url: personalInfo.website,
         description: personalInfo.summary,
         author: {
@@ -168,7 +168,7 @@ export function getJsonLdSnippets(): { label: string; code: string }[] {
           email: `mailto:${personalInfo.email}`,
           url: personalInfo.website,
           sameAs: [personalInfo.github, personalInfo.linkedin],
-          knowsAbout: ['Web Development', 'Machine Learning', 'Cloud Computing'],
+          knowsAbout: ['Pengembangan Web', 'Pembelajaran Mesin', 'Komputasi Awan'],
           alumniOf: {
             '@type': 'CollegeOrUniversity',
             name: education.institution,
@@ -185,7 +185,7 @@ export function getJsonLdSnippets(): { label: string; code: string }[] {
           '@context': 'https://schema.org',
           '@type': 'EducationalOccupationalCredential',
           credentialCategory: education.degree,
-          educationalLevel: 'Undergraduate',
+          educationalLevel: 'Sarjana (S1)',
           competencyRequired: education.field,
           recognizedBy: {
             '@type': 'CollegeOrUniversity',
@@ -203,7 +203,7 @@ export function getJsonLdSnippets(): { label: string; code: string }[] {
           '@context': 'https://schema.org',
           '@type': 'GovernmentOrganization',
           name: 'Diskominfo Kota Kendari',
-          description: 'Government agency for communications and informatics',
+          description: 'Dinas Komunikasi dan Informatika Kota Kendari',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Kendari',
@@ -243,7 +243,7 @@ export function getJsonLdSnippets(): { label: string; code: string }[] {
           termCode: 'python',
           inDefinedTermSet: {
             '@type': 'DefinedTermSet',
-            name: 'Programming Languages',
+            name: 'Bahasa Pemrograman',
           },
         },
         null,
