@@ -16,7 +16,7 @@ export default function Footer() {
                 JR
               </div>
               <span className="font-semibold text-[var(--text-primary)]">
-                Jeremy<span className="text-brand-500">.</span>dev
+                Jeremy<span className="text-brand-500">.</span>LP
               </span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] max-w-xs">
