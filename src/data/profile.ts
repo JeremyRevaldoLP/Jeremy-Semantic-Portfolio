@@ -230,11 +230,11 @@ export const projects: Project[] = [
 // ===== Organizations =====
 export const organizations: Organization[] = [
   {
-    name: 'Himpunan Mahasiswa Informatika (HIMINFO)',
+    name: 'Himpunan Mahasiswa Program Studi Ilmu Komputer',
     role: 'Anggota Aktif & Pengembang Web',
     period: '2023 – Sekarang',
     description:
-      'Berkontribusi pada asosiasi mahasiswa program studi Teknik Informatika. Bertanggung jawab atas pengembangan dan pemeliharaan situs web organisasi serta platform digital lainnya.',
+      'Berkontribusi pada asosiasi mahasiswa program studi Ilmu Komputer. Bertanggung jawab atas pengembangan dan pemeliharaan situs web organisasi serta platform digital lainnya.',
     type: 'student-org',
   },
   {

@@ -256,7 +256,7 @@ export function getJsonLdSnippets(): { label: string; code: string }[] {
         {
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: 'Himpunan Mahasiswa Informatika (HIMINFO)',
+          name: 'Himpunan Mahasiswa Program Studi Ilmu Komputer',
           member: {
             '@type': 'Person',
             name: 'Jeremy Revaldo Latuperisa',
