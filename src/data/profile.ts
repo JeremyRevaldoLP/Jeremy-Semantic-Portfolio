@@ -193,11 +193,11 @@ export const skillCategories: SkillCategory[] = [
 // ===== Projects =====
 export const projects: Project[] = [
   {
-    name: 'Smart Maintenance Router',
+    name: 'Network Maintenance Monitoring',
     description:
-      'Sistem pemeliharaan router jaringan cerdas yang menggunakan analitik prediktif untuk mengantisipasi dan mencegah kegagalan jaringan. Menampilkan pemantauan waktu nyata (real-time), diagnostik otomatis, dan dasbor ramah pengguna untuk administrator jaringan.',
+      'Sistem pemantauan dan pemeliharaan router jaringan cerdas menggunakan analitik prediktif untuk mengantisipasi dan mencegah kegagalan jaringan. Menampilkan pemantauan waktu nyata (real-time), diagnostik otomatis, dan dasbor ramah pengguna untuk administrator jaringan.',
     technologies: ['Python', 'Flask', 'React', 'TensorFlow', 'MQTT', 'PostgreSQL', 'Docker'],
-    githubUrl: 'https://github.com/JeremyRevaldoLP/smart-maintenance-router',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/Network-Maintenance-Monitoring',
     status: 'completed',
     type: 'academic',
     highlights: [
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     description:
       'Sistem pelacakan kehadiran otomatis menggunakan teknologi pengenalan wajah. Sistem menangkap dan memproses data wajah untuk memverifikasi identitas mahasiswa dan merekam kehadiran secara otomatis, menghilangkan absen manual.',
     technologies: ['Python', 'OpenCV', 'TensorFlow', 'Flask', 'SQLite', 'HTML/CSS'],
-    githubUrl: 'https://github.com/JeremyRevaldoLP/face-recognition-attendance',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/AI-FaceRecognitionAttendanceSystem',
     status: 'completed',
     type: 'academic',
     highlights: [
@@ -225,7 +225,7 @@ export const projects: Project[] = [
     description:
       'Website portofolio ini — profil pribadi yang dibangun dengan teknologi Web Semantik. Menunjukkan data terstruktur JSON-LD, markup Schema.org, dan RDF triples untuk membuat informasi profil dapat dibaca oleh mesin dan mesin pencari secara optimal.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'JSON-LD', 'Schema.org'],
-    githubUrl: 'https://github.com/JeremyRevaldoLP/semantic-portfolio',
+    githubUrl: 'https://github.com/JeremyRevaldoLP/Jeremy-Semantic-Portfolio',
     status: 'completed',
     type: 'academic',
     highlights: [
