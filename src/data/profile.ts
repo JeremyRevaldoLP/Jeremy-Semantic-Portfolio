@@ -99,20 +99,6 @@ export const experiences: Experience[] = [
     technologies: ['React', 'Next.js', 'Node.js', 'TailwindCSS', 'PostgreSQL', 'Vercel'],
     type: 'freelance',
   },
-  {
-    position: 'Ketua Proyek Teknologi Mahasiswa',
-    organization: 'Proyek Teknologi Kampus',
-    startDate: '2023-09',
-    endDate: 'Present',
-    responsibilities: [
-      'Memimpin tim pengembang untuk inisiatif dan proyek teknologi di lingkungan kampus',
-      'Berkoordinasi dengan organisasi mahasiswa untuk membangun alat dan platform digital',
-      'Mengorganisasi dan menjadi mentor dalam lokakarya pemrograman dan hackathon',
-      'Menerapkan praktik terbaik manajemen proyek untuk proyek teknologi besutan mahasiswa',
-    ],
-    technologies: ['Python', 'React', 'Firebase', 'Docker', 'Git', 'Figma'],
-    type: 'project',
-  },
 ];
 
 // ===== Skills =====
@@ -234,20 +220,6 @@ export const projects: Project[] = [
       'Mencapai skor Lighthouse tinggi untuk performa, aksesibilitas, dan SEO',
     ],
   },
-  {
-    name: 'Direktori Bisnis Lokal',
-    description:
-      'Aplikasi web full-stack untuk menemukan dan mengulas bisnis lokal di Kendari. Menampilkan fitur pencarian, filter, ulasan pengguna, dan dasbor pemilik bisnis dengan analitik.',
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'TailwindCSS', 'Vercel'],
-    githubUrl: 'https://github.com/JeremyRevaldoLP/local-business-directory',
-    status: 'in-progress',
-    type: 'personal',
-    highlights: [
-      'Merancang UI responsif dengan tata letak berbasis kartu yang modern',
-      'Menerapkan pencarian teks lengkap (full-text search) dengan PostgreSQL',
-      'Membangun REST API dengan autentikasi dan otorisasi pengguna',
-    ],
-  },
 ];
 
 // ===== Organizations =====
@@ -259,22 +231,6 @@ export const organizations: Organization[] = [
     description:
       'Berkontribusi pada asosiasi mahasiswa program studi Teknik Informatika. Bertanggung jawab atas pengembangan dan pemeliharaan situs web organisasi serta platform digital lainnya.',
     type: 'student-org',
-  },
-  {
-    name: 'Google Developer Student Club (GDSC)',
-    role: 'Anggota Tim Inti (Core Team)',
-    period: '2023 – Sekarang',
-    description:
-      'Berpartisipasi aktif dalam komunitas teknologi mahasiswa yang didukung oleh Google di kampus. Mengadakan workshop pengembangan web, komputasi awan, dan machine learning bagi sesama mahasiswa.',
-    type: 'community',
-  },
-  {
-    name: 'Campus Hackathon 2024',
-    role: 'Ketua Tim & Pengembang Full-Stack',
-    period: '2024',
-    description:
-      'Memimpin tim beranggotakan 4 orang untuk mengembangkan solusi inovatif selama hackathon 48 jam. Membangun prototipe aplikasi manajemen sumber daya kampus yang mendapat penghargaan dari juri.',
-    type: 'event',
   },
   {
     name: 'Tim Relawan IT Mahasiswa',

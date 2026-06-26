@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiCheckCircle, FiClock, FiCalendar } from 'react-icons/fi';
+import { FiGithub, FiCheckCircle, FiClock, FiCalendar } from 'react-icons/fi';
 import SectionHeading from '../ui/SectionHeading';
 import { projects } from '../../data/profile';
 
@@ -116,15 +116,6 @@ export default function Projects() {
                     >
                       <FiGithub size={14} />
                       Kode Sumber
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-sm text-[var(--text-secondary)] hover:text-brand-500 transition-colors"
-                    >
-                      <FiExternalLink size={14} />
-                      Demo
                     </a>
                   </div>
                 </div>

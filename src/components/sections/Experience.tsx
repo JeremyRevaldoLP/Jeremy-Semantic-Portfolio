@@ -50,15 +50,9 @@ export default function Experience() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative pl-12 md:pl-0 mb-12 last:mb-0 md:w-1/2 ${
-                  index % 2 === 0 ? 'md:pr-12 md:text-right md:ml-0' : 'md:pl-12 md:ml-auto'
-                }`}
+                className={`relative pl-12 md:pl-0 mb-12 last:mb-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right md:ml-0' : 'md:pl-12 md:ml-auto'
+                  }`}
               >
-                {/* Timeline dot */}
-                <div className="timeline-dot">
-                  <div className={`absolute inset-0 rounded-full bg-gradient-to-br ${typeColors[exp.type]} animate-pulse-glow`} />
-                </div>
-
                 {/* Card */}
                 <div className="card">
                   {/* Header */}

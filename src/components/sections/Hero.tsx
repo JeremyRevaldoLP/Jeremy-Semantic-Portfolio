@@ -63,22 +63,6 @@ export default function Hero() {
       </div>
 
       <div className="section-container text-center">
-        {/* Status badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 mb-8"
-        >
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
-          </span>
-          <span className="text-sm font-medium text-[var(--text-secondary)] bg-[var(--bg-secondary)] px-3 py-1 rounded-full border border-[var(--border-color)]">
-            Terbuka untuk peluang kerja
-          </span>
-        </motion.div>
-
         {/* Name */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
