@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: './',
+  base: '/Jeremy-Semantic-Portfolio/',
 })
