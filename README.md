@@ -1,32 +1,98 @@
-# React + TypeScript + Vite
+# 🌐 Jeremy Semantic Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Website portofolio pribadi **Jeremy Revaldo Latuperisa** yang dibangun dengan teknologi **Web Semantik** modern. Proyek ini menampilkan implementasi JSON-LD, markup Schema.org, dan RDF triples untuk membuat data profil dapat dibaca dan dipahami oleh mesin secara optimal.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [jeremylatuperisa.github.io](https://jeremylatuperisa.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Fitur Utama
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Web Semantik** — Implementasi data terstruktur JSON-LD & Schema.org yang komprehensif
+- **Desain Responsif** — Tampilan optimal di semua ukuran layar
+- **Animasi Halus** — Transisi dan micro-animation dengan Framer Motion
+- **Performa Tinggi** — Skor Lighthouse tinggi untuk performa, aksesibilitas, dan SEO
+- **Visualisasi Interaktif** — Demonstrasi RDF triple dan Web Semantik secara langsung
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+| Kategori | Teknologi |
+|---|---|
+| Framework | React 19, TypeScript |
+| Styling | TailwindCSS v4 |
+| Animasi | Framer Motion |
+| Bundler | Vite 8 |
+| Routing | React Router DOM v7 |
+| Icons | React Icons |
+| Web Semantik | JSON-LD, Schema.org |
+| Linter | oxlint |
+
+---
+
+## 🚀 Cara Menjalankan Lokal
+
+### Prasyarat
+- Node.js (v18+)
+- npm
+
+### Instalasi
+
+```bash
+# Clone repository
+git clone https://github.com/JeremyRevaldoLP/Jeremy-Semantic-Portfolio.git
+cd Jeremy-Semantic-Portfolio
+
+# Install dependensi
+npm install
+
+# Jalankan development server
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Buka browser dan akses `http://localhost:5173`
+
+### Perintah Lainnya
+
+```bash
+npm run build    # Build untuk produksi
+npm run preview  # Preview hasil build
+npm run lint     # Jalankan linter
+```
+
+---
+
+## 📁 Struktur Proyek
+
+```
+Jeremy-Semantic-Portfolio/
+├── public/           # Aset statis
+├── src/
+│   ├── components/   # Komponen React
+│   ├── data/
+│   │   └── profile.ts  # Data profil (info, skills, projects, dll.)
+│   ├── types/        # TypeScript type definitions
+│   └── main.tsx      # Entry point
+├── index.html
+├── vite.config.ts
+└── package.json
+```
+
+---
+
+## 👤 Tentang Pemilik
+
+**Jeremy Revaldo Latuperisa**
+Mahasiswa Ilmu Komputer — Universitas Halu Oleo (angkatan 2023)
+
+- 📧 jeremyrevaldo0000@gmail.com
+- 📍 Kendari, Sulawesi Tenggara, Indonesia
+- 💼 [LinkedIn](https://www.linkedin.com/in/jeremy-revaldo-a86542410/)
+- 🐙 [GitHub](https://github.com/JeremyRevaldoLP)
+
+---
+
+## 📄 Lisensi
+
+Proyek ini bersifat open source dan tersedia di bawah lisensi [MIT](LICENSE).
