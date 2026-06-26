@@ -2,7 +2,8 @@
 
 Website portofolio pribadi **Jeremy Revaldo Latuperisa** yang dibangun dengan teknologi **Web Semantik** modern. Proyek ini menampilkan implementasi JSON-LD, markup Schema.org, dan RDF triples untuk membuat data profil dapat dibaca dan dipahami oleh mesin secara optimal.
 
-🔗 **Live Site:** [jeremylatuperisa.github.io](https://jeremylatuperisa.github.io)
+🔗 **Live Site:** [jeremyrevaldolp.github.io](https://jeremyrevaldolp.github.io/Jeremy-Semantic-Portfolio/
+)
 
 ---
 
