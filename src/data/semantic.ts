@@ -188,15 +188,6 @@ export const schemaEntities: SchemaEntity[] = [
       recognizedBy: 'Universitas Halu Oleo',
     },
   },
-  {
-    type: 'Event',
-    description: 'Merepresentasikan kegiatan atau kompetisi teknologi yang diikuti oleh Jeremy.',
-    properties: {
-      name: 'Campus Hackathon 2024',
-      eventAttendanceMode: 'OfflineEventAttendanceMode',
-      organizer: 'Universitas Halu Oleo',
-    },
-  },
 ];
 
 // ===== Semantic Web Concepts =====
